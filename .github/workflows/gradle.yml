@@ -2,7 +2,7 @@ name: gradle
 on:
   push:
     branches:
-      - main # run the action on your projects default branch
+      - master # run the action on your projects default branch
 
 jobs:
   build:
