@@ -19,6 +19,6 @@ jobs:
         with:
           use-gradlew: false
           gradle-build-module: |-
-            :
+            :app
           gradle-build-configuration: |-
             compileClasspath
