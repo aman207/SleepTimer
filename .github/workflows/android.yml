@@ -29,7 +29,7 @@ jobs:
     - name: Assemble release
       run: ./gradlew assembleRelease
       
-    - uses: ViMaSter/sign-android-release@latest
+    - uses: ViMaSter/sign-android-release@master
       name: Sign app APK
       # ID used to access action output
       id: sign_app
