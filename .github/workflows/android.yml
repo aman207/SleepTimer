@@ -29,7 +29,7 @@ jobs:
     - name: Assemble release
       run: ./gradlew assembleRelease
       
-    - uses: r0adkll/sign-android-release@v1
+    - uses: ViMaSter/sign-android-release@latest
       name: Sign app APK
       # ID used to access action output
       id: sign_app
@@ -42,7 +42,7 @@ jobs:
       env:
         BUILD_TOOLS_VERSION: "33.0.2"
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: Signed app bundle
         path: ${{steps.sign_app.outputs.signedReleaseFile}}
